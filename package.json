@@ -1,0 +1,32 @@
+{
+  "name": "ms-authentication",
+  "version": "1.0.0",
+  "description": "Microservice para a authenticação de usuario",
+  "main": "./dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./",
+    "build": "tsc -p .",
+    "dev": "ts-node-dev --respawn --transpile-only --ignore-watch node_modules --no-notify src/index.ts"
+  },
+  "author": "Paulo Machado Fraga Matos",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/express": "^4.17.16",
+    "@types/node": "^18.11.18",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^4.9.4",
+    "@types/config": "^0.0.39",
+    "@types/jsonwebtoken": "^8.5.5",
+    "@types/pg": "^8.6.1",
+    "tsconfig-paths": "^3.11.0"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "http-status-code": "^2.1.0",
+    "http-status-codes": "^2.2.0",
+    "config": "^3.3.6",
+    "jsonwebtoken": "^8.5.1",
+    "pg": "^8.7.1"
+  }
+}
